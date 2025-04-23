@@ -97,6 +97,8 @@ After=network.target
 [Service]
 ExecStart=/root/bitnet/venv/bin/uvicorn bitnet_proxy:app --host 0.0.0.0 --port 8001
 WorkingDirectory=/root/bitnet
+StandardOutput=append:/var/log/bitnet_proxy.log
+StandardError=append:/var/log/bitnet_proxy.log
 Restart=always
 User=root
 
