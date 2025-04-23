@@ -8,7 +8,7 @@ echo "🔧 System aktualisieren..."
 apt update && apt upgrade -y
 
 echo "📦 Notwendige Pakete installieren..."
-apt install -y python3 python3-pip python3-venv git curl jq build-essential -y
+apt install -y python3 python3-pip python3-venv git curl jq build-essential libssl-dev -y
 
 echo "📁 Projektverzeichnis vorbereiten..."
 mkdir -p /root/bitnet/models
