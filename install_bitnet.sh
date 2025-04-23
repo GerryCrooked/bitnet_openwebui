@@ -3,6 +3,7 @@
 set -e
 
 HUGGINGFACE_TOKEN="ENTER YOUR TOKEN"
+export HUGGINGFACE_TOKEN
 
 echo "🔧 System aktualisieren..."
 apt update && apt upgrade -y
