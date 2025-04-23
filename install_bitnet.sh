@@ -5,7 +5,7 @@ set -e
 echo "📦 Installiere BitNet Abhängigkeiten..."
 
 # Systempakete
-apt update && apt install -y python3 python3-venv python3-pip curl git
+apt update && apt install -y python3 python3-venv python3-pip curl git jq
 
 # Arbeitsverzeichnis
 mkdir -p /root/bitnet/models
